@@ -28,7 +28,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="hero">
+    <section id="home">
       <div class="container">
         <h2>Welcome to My Portfolio</h2>
         <p>Web Developer | Designer | Programmer</p>
@@ -41,9 +41,26 @@
       <div class="container">
         <h3>Featured Projects</h3>
 
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+          <button data-filter="all">All</button>
+          <button data-filter="html">HTML</button>
+          <button data-filter="css">CSS</button>
+          <button data-filter="javascript">JavaScript</button>
+        </div>
+
         <div class="project-grid">
-          <div class="project">
-            <img src="images/project1.jpg" alt="Project 1" />
+          <div class="project" data-category="html">
+            <div id="modal" class="modal">
+              <span class="close">&times;</span>
+              <img
+                src="images/project1.jpg"
+                alt="Project 1"
+                class="modal-content"
+                id="modal-img"
+              />
+              <div id="caption"></div>
+            </div>
             <div class="project-info">
               <h4>Project Title 1</h4>
               <p>A brief summary of the project goes here.</p>
@@ -51,8 +68,17 @@
             </div>
           </div>
 
-          <div class="project">
-            <img src="images/project2.jpg" alt="Project 2" />
+          <div class="project" data-category="css">
+            <div id="modal" class="modal">
+              <span class="close">&times;</span>
+              <img
+                src="images/project2.jpg"
+                alt="Project 2"
+                class="modal-content"
+                id="modal-img"
+              />
+              <div id="caption"></div>
+            </div>
             <div class="project-info">
               <h4>Project Title 2</h4>
               <p>A brief summary of the project goes here.</p>
@@ -60,8 +86,17 @@
             </div>
           </div>
 
-          <div class="project">
-            <img src="images/project3.jpg" alt="Project 3" />
+          <div class="project" data-category="javascript">
+            <div id="modal" class="modal">
+              <span class="close">&times;</span>
+              <img
+                src="images/project3.jpg"
+                alt="Project 3"
+                class="modal-content"
+                id="modal-img"
+              />
+              <div id="caption"></div>
+            </div>
             <div class="project-info">
               <h4>Project Title 3</h4>
               <p>A brief summary of the project goes here.</p>
