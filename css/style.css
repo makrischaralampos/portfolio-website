@@ -3,6 +3,13 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
 }
 
 header {
@@ -10,6 +17,11 @@ header {
   color: white;
   padding: 10px 0;
   text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
 }
 
 nav ul {
@@ -25,17 +37,66 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
 #hero {
-  background-color: #ddd;
-  padding: 20px;
+  background-color: #555;
+  color: white;
+  padding: 100px 0;
   text-align: center;
 }
 
-#projects,
-#contact {
-  margin: 20px;
+#hero h2 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+#hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.cta {
+  background-color: #e8491d;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+#projects {
+  margin: 20px 0;
+  background-color: #f9f9f9;
+}
+
+#projects h3 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.project {
+  display: flex;
+  margin-bottom: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.project img {
+  max-width: 30%;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.project-info {
+  flex-grow: 1;
+}
+
+.project-info h4 {
+  margin-top: 0;
 }
 
 footer {
