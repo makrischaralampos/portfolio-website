@@ -28,19 +28,28 @@ filterButtons.forEach((button) => {
   });
 });
 
-const modal = document.getElementById("modal");
-const modalImg = document.getElementById("modal-img");
-const captionText = document.getElementById("caption");
-const closeBtn = document.getElementsByClassName("close")[0];
+document.addEventListener("DOMContentLoaded", function () {
+  const lazyImages = document.querySelectorAll("img[loading='lazy']");
 
-document.querySelectorAll(".project img").forEach((image) => {
-  image.addEventListener("click", () => {
-    modal.style.display = "block";
-    modalImg.src = image.src;
-    captionText.innerHTML = image.alt;
-  });
+  if ("IntersectionObserver" in window) {
+    const lazyImageObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const lazyImage = entry.target;
+          lazyImage.src = lazyImage.dataset.src;
+          lazyImage.removeAttribute("loading");
+          lazyImageObserver.unobserve(lazyImage);
+        }
+      });
+    });
+
+    lazyImages.forEach((lazyImage) => {
+      lazyImageObserver.observe(lazyImage);
+    });
+  } else {
+    // Fallback for browsers that don't support IntersectionObserver
+    lazyImages.forEach((lazyImage) => {
+      lazyImage.src = lazyImage.dataset.src;
+    });
+  }
 });
-
-closeBtn.onclick = function () {
-  modal.style.display = "none";
-};

@@ -32,15 +32,6 @@
       </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home">
-      <div class="container">
-        <h2>Welcome to My Portfolio</h2>
-        <p>Software Engineer</p>
-        <a href="#projects" class="cta">View My Work</a>
-      </div>
-    </section>
-
     <!-- Projects Section -->
     <section id="projects">
       <div class="container">
@@ -56,16 +47,11 @@
 
         <div class="project-grid">
           <div class="project" data-category="redux">
-            <div id="modal" class="modal">
-              <span class="close">&times;</span>
-              <img
-                src="images/InspirationalHomepage.png"
-                alt="Inspirational Homepage"
-                class="modal-content"
-                id="modal-img"
-              />
-              <div id="caption"></div>
-            </div>
+            <img
+              data-src="images/InspirationalHomepage.png"
+              alt="Inspirational Homepage"
+              loading="lazy"
+            />
             <div class="project-info">
               <h4>Inspirational Homepage</h4>
               <p>
@@ -98,16 +84,7 @@
           </div>
 
           <div class="project" data-category="react">
-            <div id="modal" class="modal">
-              <span class="close">&times;</span>
-              <img
-                src="images/Jammming.png"
-                alt="Jammming"
-                class="modal-content"
-                id="modal-img"
-              />
-              <div id="caption"></div>
-            </div>
+            <img data-src="images/Jammming.png" alt="Jammming" loading="lazy" />
             <div class="project-info">
               <h4>Jammming</h4>
               <p>
@@ -133,16 +110,11 @@
           </div>
 
           <div class="project" data-category="javascript">
-            <div id="modal" class="modal">
-              <span class="close">&times;</span>
-              <img
-                src="images/project3.jpg"
-                alt="Project 3"
-                class="modal-content"
-                id="modal-img"
-              />
-              <div id="caption"></div>
-            </div>
+            <img
+              data-src="images/project3.jpg"
+              alt="Project 3"
+              loading="lazy"
+            />
             <div class="project-info">
               <h4>Project Title 3</h4>
               <p>A brief summary of the project goes here.</p>
@@ -185,9 +157,10 @@
           <!-- Optional: Add a personal photo -->
           <div class="contact-item">
             <img
-              src="images/resume_photo.jfif"
-              alt="Your Name"
+              data-src="images/resume_photo.jfif"
+              alt="Makris Charalampos"
               class="personal-photo"
+              loading="lazy"
             />
           </div>
         </div>
