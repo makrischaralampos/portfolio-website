@@ -117,16 +117,18 @@ nav ul li a:hover {
 .cta {
   background-color: var(--secondary-color);
   color: white;
-  padding: 10px 20px;
+  padding: 12px 24px;
   text-decoration: none;
   font-size: 1.2em;
-  border-radius: 5px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cta:hover {
   background-color: var(--accent-color);
   transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 #projects {
@@ -287,6 +289,9 @@ footer {
 
   .mobile-menu.active {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 
