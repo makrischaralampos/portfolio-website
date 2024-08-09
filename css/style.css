@@ -218,6 +218,21 @@ nav ul li a:hover {
   background-color: var(--accent-color);
 }
 
+#about-me {
+  padding: 20px 0;
+  background-color: #f4f4f4;
+}
+
+#about-me h3 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#about-me p {
+  text-align: center;
+}
+
 #contact {
   padding: 20px 0;
   background-color: #f4f4f4;
