@@ -3,14 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Makris Charalampos</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Header Section -->
     <header>
       <div class="container">
-        <h1>Your Name</h1>
+        <h1>Makris Charalampos</h1>
         <nav>
           <ul>
             <li>
@@ -31,7 +35,7 @@
     <section id="home">
       <div class="container">
         <h2>Welcome to My Portfolio</h2>
-        <p>Web Developer | Designer | Programmer</p>
+        <p>Software Engineer</p>
         <a href="#projects" class="cta">View My Work</a>
       </div>
     </section>
@@ -44,45 +48,56 @@
         <!-- Filter Buttons -->
         <div class="filter-buttons">
           <button data-filter="all">All</button>
-          <button data-filter="html">HTML</button>
-          <button data-filter="css">CSS</button>
+          <button data-filter="react">React</button>
+          <button data-filter="redux">Redux</button>
           <button data-filter="javascript">JavaScript</button>
         </div>
 
         <div class="project-grid">
-          <div class="project" data-category="html">
+          <div class="project" data-category="redux">
             <div id="modal" class="modal">
               <span class="close">&times;</span>
               <img
-                src="images/project1.jpg"
-                alt="Project 1"
+                src="images/InspirationalHomepage.png"
+                alt="Inspirational Homepage"
                 class="modal-content"
                 id="modal-img"
               />
               <div id="caption"></div>
             </div>
             <div class="project-info">
-              <h4>Project Title 1</h4>
-              <p>A brief summary of the project goes here.</p>
-              <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+              <h4>Inspirational Homepage</h4>
+              <p>
+                The Inspirational Homepage is a dynamic web application designed
+                to provide users with an uplifting and motivational start to
+                their day.
+              </p>
+              <p><strong>Technologies Used:</strong> React, Redux, CSS</p>
             </div>
           </div>
 
-          <div class="project" data-category="css">
+          <div class="project" data-category="react">
             <div id="modal" class="modal">
               <span class="close">&times;</span>
               <img
-                src="images/project2.jpg"
-                alt="Project 2"
+                src="images/Jammming.png"
+                alt="Jammming"
                 class="modal-content"
                 id="modal-img"
               />
               <div id="caption"></div>
             </div>
             <div class="project-info">
-              <h4>Project Title 2</h4>
-              <p>A brief summary of the project goes here.</p>
-              <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+              <h4>Jammming</h4>
+              <p>
+                Jammming is a web application that allows users to search the
+                Spotify library, create custom playlists, and save them to their
+                Spotify accounts.
+              </p>
+              <p>
+                <strong>Technologies Used:</strong> React, Spotify Web API,
+                OAuth
+              </p>
             </div>
           </div>
 
@@ -121,15 +136,17 @@
           <div class="contact-item">
             <h4>Email:</h4>
             <p>
-              <a href="mailto:your.email@example.com">your.email@example.com</a>
+              <a href="mailto:mcshooter23@gmail.com">mcshooter23@gmail.com</a>
             </p>
           </div>
 
           <div class="contact-item">
             <h4>LinkedIn</h4>
             <p>
-              <a href="https://www.linkedin.com/in/your-profile" target="_blank"
-                >linkedin.com/in/your-profile</a
+              <a
+                href="https://www.linkedin.com/in/charalampos-makris-371566269/"
+                target="_blank"
+                >linkedin.com/in/charalampos-makris-371566269</a
               >
             </p>
           </div>
@@ -137,7 +154,7 @@
           <!-- Optional: Add a personal photo -->
           <div class="contact-item">
             <img
-              src="images/your-photo.jpg"
+              src="images/resume_photo.jfif"
               alt="Your Name"
               class="personal-photo"
             />
@@ -148,7 +165,7 @@
 
     <!-- Footer -->
     <footer>
-      <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+      <p>&copy; 2024 Makris Charalampos. All Rights Reserved.</p>
     </footer>
 
     <script src="js/main.js"></script>
