@@ -61,6 +61,41 @@ nav ul li a:hover {
   color: var(--accent-color);
 }
 
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.mobile-menu-icon span {
+  display: block;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  list-style-type: none;
+  background-color: var(--primary-color);
+  padding: 10px 0;
+}
+
+.mobile-menu li {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.mobile-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 #home {
   background-color: #555;
   color: white;
@@ -128,7 +163,7 @@ nav ul li a:hover {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
 }
 
@@ -242,34 +277,47 @@ footer {
 }
 
 @media (max-width: 768px) {
-  nav ul {
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-menu-icon {
     display: flex;
+  }
+
+  .mobile-menu.active {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  nav ul {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   nav ul li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
-  header h1 {
-    font-size: 1.8em;
+  .container {
+    width: 90%;
   }
 
   .project-info h4 {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 
   .project-info p {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
-  .modal-content {
-    width: 90%;
-  }
-
-  #caption {
-    width: 90%;
+  .personal-photo {
+    max-width: 120px;
   }
 }
 
@@ -278,16 +326,34 @@ footer {
     font-size: 1.5em;
   }
 
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    width: 95%;
+  }
+
   .project-info h4 {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   .project-info p {
     font-size: 0.8em;
   }
 
-  .project img {
-    max-width: 100%;
-    height: auto;
+  .personal-photo {
+    max-width: 100px;
+  }
+
+  .cta {
+    padding: 8px 16px;
+    font-size: 1em;
+  }
+
+  .filter-buttons button {
+    padding: 8px 12px;
+    font-size: 0.9em;
   }
 }
