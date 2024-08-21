@@ -1,272 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Makris Charalampos - Software Engineer Portfolio</title>
-    <meta
-      name="description"
-      content="Portfolio of Makris Charalampos, a passionate software engineer "
-    />
-    <meta
-      name="keywords"
-      content="Software Engineer, Portfolio, Makris Charalampos"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta
-      property="og:title"
-      content="Makris Charalampos - Software Engineer Portfolio"
-    />
-    <meta
-      property="og:description"
-      content="Explore the projects and skills of Makris Charalampos, a software engineer"
-    />
-    <meta property="og:image" content="images/resume_photo.jfif" />
-    <meta
-      property="og:url"
-      content="https://makrischaralampos.github.io/portfolio-website/"
-    />
-    <meta property="og:type" content="website" />
+  <title>Makris Charalampos - Software Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Makris Charalampos, a passionate software engineer " />
+  <meta name="keywords" content="Software Engineer, Portfolio, Makris Charalampos" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Makris Charalampos - Software Engineer Portfolio"
-    />
-    <meta
-      name="twitter:description"
-      content="Explore the projects and skills of Makris Charalampos, a software engineer"
-    />
-    <meta name="twitter:image" content="images/resume_photo.jfif" />
+  <meta property="og:title" content="Makris Charalampos - Software Engineer Portfolio" />
+  <meta property="og:description"
+    content="Explore the projects and skills of Makris Charalampos, a software engineer" />
+  <meta property="og:image" content="images/resume_photo.jfif" />
+  <meta property="og:url" content="https://makrischaralampos.github.io/portfolio-website/" />
+  <meta property="og:type" content="website" />
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Makris Charalampos - Software Engineer Portfolio" />
+  <meta name="twitter:description"
+    content="Explore the projects and skills of Makris Charalampos, a software engineer" />
+  <meta name="twitter:image" content="images/resume_photo.jfif" />
 
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-10Q1N6V4HY"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet" />
 
-      gtag("config", "G-10Q1N6V4HY");
-    </script>
-  </head>
-  <body>
-    <!-- Header Section -->
-    <header>
-      <div class="container">
-        <h1>Makris Charalampos</h1>
-        <p class="tagline">Passionate and Higly Motivated Software Engineer</p>
-        <nav aria-label="Main Navigation">
-          <ul class="desktop-menu">
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#about-me">About Me</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-          <div class="mobile-menu-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <ul class="mobile-menu">
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#about-me">About Me</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-10Q1N6V4HY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <div class="container">
-        <h3>Featured Projects</h3>
+    gtag("config", "G-10Q1N6V4HY");
+  </script>
+</head>
 
-        <!-- Filter Buttons -->
-        <div class="filter-buttons">
-          <button data-filter="all">All</button>
-          <button data-filter="react">React</button>
-          <button data-filter="redux">Redux</button>
-          <button data-filter="javascript">JavaScript</button>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>Makris Charalampos</h1>
+      <p class="tagline">Passionate and Higly Motivated Software Engineer</p>
+      <nav aria-label="Main Navigation">
+        <ul class="desktop-menu">
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#about-me">About Me</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="mobile-menu-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <ul class="mobile-menu">
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#about-me">About Me</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <div class="project-grid">
-          <div class="project" data-category="redux">
-            <img
-              data-src="images/InspirationalHomepage.png"
-              alt="Sreenshot of Inspirational Homepage, a goals managements web application"
-              loading="lazy"
-            />
-            <div class="project-info">
-              <h4>Inspirational Homepage</h4>
-              <p>
-                <strong>Overview:</strong> The Inspirational Homepage is a
-                dynamic web application designed to provide users with an
-                uplifting and motivational start to their day.
-              </p>
-              <p>
-                <strong>Key Features:</strong> Current Weather, Inspirational
-                Images, Inspirational Quotes, Goals Management
-              </p>
-              <p>
-                <strong>Technologies Used:</strong> React, Redux, CSS,
-                OpenWeather API, Quotable API, Unsplash API, Netlify, Git &
-                GitHub
-              </p>
-              <a
-                href="https://inspirational-homepage-mcshooter.netlify.app/"
-                class="cta"
-                target="_blank"
-                aria-label="View Live"
-                >View Live</a
-              >
-              <a
-                href="https://github.com/makrischaralampos/inspirational-homepage"
-                class="cta"
-                target="_blank"
-                aria-label="View on GitHub"
-                >View on GitHub</a
-              >
-            </div>
-          </div>
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h3>Featured Projects</h3>
 
-          <div class="project" data-category="react">
-            <img
-              data-src="images/Jammming.png"
-              alt="Sreenshot of Jammming, a Spotify playlist creation app"
-              loading="lazy"
-            />
-            <div class="project-info">
-              <h4>Jammming</h4>
-              <p>
-                <strong>Overview:</strong> Jammming is a web application that
-                allows users to search the Spotify library, create custom
-                playlists, and save them to their Spotify accounts.
-              </p>
-              <p>
-                <strong>Key Features:</strong> Search, Playlist Customization,
-                Playlist Management, User Authentication, Responsive Design
-              </p>
-              <p>
-                <strong>Technologies Used:</strong> React, Spotify Web API,
-                OAuth
-              </p>
-              <a
-                href="https://github.com/makrischaralampos/Jammming"
-                class="cta"
-                target="_blank"
-                aria-label="View on GitHub"
-                >View on GitHub</a
-              >
-            </div>
-          </div>
-
-          <div class="project" data-category="javascript">
-            <img
-              data-src="images/project3.jpg"
-              alt="Project 3"
-              loading="lazy"
-            />
-            <div class="project-info">
-              <h4>Project Title 3</h4>
-              <p>A brief summary of the project goes here.</p>
-              <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
-            </div>
-          </div>
-        </div>
+      <!-- Filter Buttons -->
+      <div class="filter-buttons">
+        <button data-filter="all">All</button>
+        <button data-filter="react">React</button>
+        <button data-filter="redux">Redux</button>
       </div>
-    </section>
 
-    <section id="about-me">
-      <div class="container">
-        <h3>About Me</h3>
-        <p>
-          Hello! I'm Makris Charalampos, a passionate software engineer with a
-          love for building innovative applications. My journey into software
-          development began in university, where I created my first apps. Since
-          then, I've been captivated by the endless possibilities of code.
-        </p>
-        <p>
-          I specialize in software engineering and information systems and my
-          goal is to create user-friendly, accessible, and impactful
-          applications that solve real-world problems.
-        </p>
-        <p>
-          When I'm not coding, you can find me working out, watching movies, or
-          doing nerdy stuff. I'm always eager to learn, grow, and take on new
-          challenges in the ever-evolving tech landscape.
-        </p>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <h3>Contact Me</h3>
-        <p>
-          If you'd like to get in touch, feel free to reach out via email or
-          connect with me on LinkedIn.
-        </p>
-
-        <!-- Contact Information -->
-        <div class="contact-info">
-          <div class="contact-item">
-            <h4>Email:</h4>
+      <div class="project-grid">
+        <div class="project" data-category="react">
+          <img data-src="images/jammming.png" alt="Sreenshot of Jammming, a Spotify playlist creation app"
+            loading="lazy" />
+          <div class="project-info">
+            <h4>Jammming</h4>
             <p>
-              <a href="mailto:mcshooter23@gmail.com">mcshooter23@gmail.com</a>
+              <strong>Overview:</strong> Jammming is a web application that allows users to search for songs on Spotify,
+              create custom playlists, and save those playlists directly to their Spotify account.
             </p>
-          </div>
-
-          <div class="contact-item">
-            <h4>LinkedIn</h4>
             <p>
-              <a
-                href="https://www.linkedin.com/in/charalampos-makris-371566269/"
-                target="_blank"
-                >linkedin.com/in/charalampos-makris-371566269</a
-              >
+              <strong>Key Features:</strong> Search Functionality, Playlist Creation, Save Playlists to Spotify
             </p>
+            <p>
+              <strong>Technologies Used:</strong> React, Bootstrap, Spotify API
+            </p>
+            <a href="https://makrischaralampos.github.io/jammming" class="cta" target="_blank"
+              aria-label="View Live">View Live</a>
+            <a href="https://github.com/makrischaralampos/jammming.git" class="cta" target="_blank"
+              aria-label="View on GitHub">View on GitHub</a>
           </div>
+        </div>
 
-          <!-- Optional: Add a personal photo -->
-          <div class="contact-item">
-            <img
-              data-src="images/resume_photo.jfif"
-              alt="Makris Charalampos, Software Engineer"
-              class="personal-photo"
-              loading="lazy"
-            />
+        <div class="project" data-category="redux">
+          <img data-src="images/inspirational-homepage.png"
+            alt="Sreenshot of Inspirational Homepage, a goals management app" loading="lazy" />
+          <div class="project-info">
+            <h4>Inspirational Homepage</h4>
+            <p>
+              <strong>Overview:</strong> Inspirational Homepage is a React-based web application designed to uplift your
+              day by combining beautiful imagery, motivational quotes, weather updates, and goal tracking all on one
+              personalized homepage.
+            </p>
+            <p>
+              <strong>Key Features:</strong> Motivational Quotes, Dynamic Background Images, Weather Updates
+            </p>
+            <p>
+              <strong>Technologies Used:</strong> React, Redux Toolkit, Material-UI
+            </p>
+            <a href="https://inspirational-homepage-mcshooter.netlify.app/" class="cta" target="_blank"
+              aria-label="View Live">View Live</a>
+            <a href="https://github.com/makrischaralampos/inspirational-homepage.git" class="cta" target="_blank"
+              aria-label="View on GitHub">View on GitHub</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2024 Makris Charalampos. All Rights Reserved.</p>
-    </footer>
+  <section id="about-me">
+    <div class="container">
+      <h3>About Me</h3>
+      <p>
+        Hello! I'm Makris Charalampos, a passionate software engineer with a
+        love for building innovative applications. My journey into software
+        development began in university, where I created my first apps. Since
+        then, I've been captivated by the endless possibilities of code.
+      </p>
+      <p>
+        I specialize in software engineering and information systems and my
+        goal is to create user-friendly, accessible, and impactful
+        applications that solve real-world problems.
+      </p>
+      <p>
+        When I'm not coding, you can find me working out, watching movies, or
+        doing nerdy stuff. I'm always eager to learn, grow, and take on new
+        challenges in the ever-evolving tech landscape.
+      </p>
+    </div>
+  </section>
 
-    <script src="js/main.js"></script>
-  </body>
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h3>Contact Me</h3>
+      <p>
+        If you'd like to get in touch, feel free to reach out via email or
+        connect with me on LinkedIn.
+      </p>
+
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <div class="contact-item">
+          <h4>Email:</h4>
+          <p>
+            <a href="mailto:mcshooter23@gmail.com">mcshooter23@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="contact-item">
+          <h4>LinkedIn</h4>
+          <p>
+            <a href="https://www.linkedin.com/in/charalampos-makris-371566269/"
+              target="_blank">linkedin.com/in/charalampos-makris-371566269</a>
+          </p>
+        </div>
+
+        <!-- Optional: Add a personal photo -->
+        <div class="contact-item">
+          <img data-src="images/resume_photo.jfif" alt="Makris Charalampos, Software Engineer" class="personal-photo"
+            loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Makris Charalampos. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>
